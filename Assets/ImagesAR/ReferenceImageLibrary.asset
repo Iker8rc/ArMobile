@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: Unity.XR.ARSubsystems::UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+  m_GuidLow: 4852203272586026764
+  m_GuidHigh: 15485464343778915721
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5404535613362537775
+      m_GuidHigh: 4531730885748709270
+    m_SerializedTextureGuid:
+      m_GuidLow: 7017810910861893346
+      m_GuidHigh: 12651176894962227674
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Goku
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4713499858902696595
+      m_GuidHigh: 13050688412966864782
+    m_SerializedTextureGuid:
+      m_GuidLow: 5428225949578334344
+      m_GuidHigh: 8755053284827128299
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Vegeta
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4969656336166101048
+      m_GuidHigh: 6652050739039900845
+    m_SerializedTextureGuid:
+      m_GuidLow: 1802681670931323740
+      m_GuidHigh: 4036184215975455050
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Gohan
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4708498930872712201
+      m_GuidHigh: 4935706197072320902
+    m_SerializedTextureGuid:
+      m_GuidLow: 8445643676117596314
+      m_GuidHigh: 13583527458932659338
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Piccolo
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5073833645389377606
+      m_GuidHigh: 13086043781462436743
+    m_SerializedTextureGuid:
+      m_GuidLow: 113921285086894221
+      m_GuidHigh: 17193418169008593273
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Boo
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5567330206674544013
+      m_GuidHigh: 1619082798496092036
+    m_SerializedTextureGuid:
+      m_GuidLow: 15367604281330663275
+      m_GuidHigh: 690229567700422746
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Cell
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4790969875027676835
+      m_GuidHigh: 18266530188613979799
+    m_SerializedTextureGuid:
+      m_GuidLow: 16556411438975723047
+      m_GuidHigh: 1103198840587121577
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Bardock
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5420908178606018711
+      m_GuidHigh: 9210631354387067828
+    m_SerializedTextureGuid:
+      m_GuidLow: 13304785180476165776
+      m_GuidHigh: 8324383371865111432
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Jiren
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5745192070021215281
+      m_GuidHigh: 18418365078882354069
+    m_SerializedTextureGuid:
+      m_GuidLow: 9643431692445941422
+      m_GuidHigh: 11235116951055967417
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Broly
+    m_Texture: {fileID: 0}
