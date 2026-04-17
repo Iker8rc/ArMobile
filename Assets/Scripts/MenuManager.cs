@@ -1,16 +1,30 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+   
+    public void CargarVRFake(string FakeVR)
     {
-        
+        SceneManager.LoadScene(FakeVR);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CargarImage(string TrackerImage)
     {
-        
+        SceneManager.LoadScene(TrackerImage);
     }
+
+    public void CargarSurface(string TrackerSurface)
+    {
+        SceneManager.LoadScene(TrackerSurface);
+    }
+
+   
+    public void SalirDelJuego()
+    {
+        Debug.Log("Saliendo del juego...");
+
+        Application.Quit();
+    }
+
 }
