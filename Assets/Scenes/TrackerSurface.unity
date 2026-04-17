@@ -163,6 +163,20 @@ MonoBehaviour:
   objetosAR:
   - referenceImageName: Gohan
     referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Goku
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Piccolo
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Boo
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Jiren
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Vegeta
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Cell
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+  - referenceImageName: Bardock
+    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
 --- !u!4 &306563825
 Transform:
   m_ObjectHideFlags: 0
@@ -257,9 +271,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 331264288}
-    - targetCorrespondingSourceObject: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
 --- !u!1 &331264287 stripped
 GameObject:
