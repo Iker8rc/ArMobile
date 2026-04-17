@@ -162,21 +162,21 @@ MonoBehaviour:
   trackedImageManager: {fileID: 331264288}
   objetosAR:
   - referenceImageName: Gohan
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 2247001579787759317, guid: f62a8efae2fa4104581a885863db6ae1, type: 3}
   - referenceImageName: Goku
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 6010396859400957150, guid: 8061a36de9a7eb9428e6b285a2b8870b, type: 3}
   - referenceImageName: Piccolo
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 4578339414057411196, guid: 5a53cc12c040542409670ba835141417, type: 3}
   - referenceImageName: Boo
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 8349719473030691379, guid: 9626ec632d26f534e8eb09fd1a6ccbf5, type: 3}
   - referenceImageName: Jiren
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 1225069981091342847, guid: e0a6147533d7c074180a722defbbc8e8, type: 3}
   - referenceImageName: Vegeta
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 1171370799899408201, guid: d25ec90891a847d4c84708099cc68d07, type: 3}
   - referenceImageName: Cell
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 6805767411902343905, guid: 7b9f2966d121fd647ad00ba1dd45039a, type: 3}
   - referenceImageName: Bardock
-    referencePrefab: {fileID: 7984464414127629743, guid: 1b90d39293ac24241a4ad733fad767ac, type: 3}
+    referencePrefab: {fileID: 6793616430750137429, guid: cb44b56f0de1b09468484737c5e978de, type: 3}
 --- !u!4 &306563825
 Transform:
   m_ObjectHideFlags: 0
@@ -293,7 +293,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_SerializedLibrary: {fileID: 11400000, guid: 1ef571e2fc06dbb4fbf0483b6e96bc35, type: 2}
-  m_MaxNumberOfMovingImages: 5
+  m_MaxNumberOfMovingImages: 10
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!1 &480943318
 GameObject:
@@ -470,7 +470,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -89.899994, y: 41.9}
+  m_AnchoredPosition: {x: -89.900024, y: 41.899994}
   m_SizeDelta: {x: 167.56, y: 72.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &719232662
