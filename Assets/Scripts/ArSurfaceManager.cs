@@ -2,20 +2,17 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 
-public class ArSurfaceManager : MonoBehaviour
+public class ARSurfacemanager : MonoBehaviour
 {
-
     [SerializeField]
     private ARPlaneManager planeManager;
-
     [SerializeField]
-    private GameObject prefab;
+    private GameObject[] prefabs;
     [SerializeField]
-    private GameObject canvanUI;
-    [SerializeField]
+    private GameObject canvasUI;
     private bool planeVisibility = true;
-
     private PlayerInput playerInput;
+    private int ObjSelect; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,19 +35,24 @@ public class ArSurfaceManager : MonoBehaviour
         {
             Vector2 touchPos = playerInput.actions["TouchPosition"].ReadValue<Vector2>();
             Ray ray = Camera.main.ScreenPointToRay(touchPos);
-            RaycastHit hit;
+            RaycastHit hit; 
 
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log("Choco contra" + hit.transform.name);
-                Instantiate(prefab, hit.point, Quaternion.identity);
+                Debug.Log("Choco contra " + hit.transform.name);
+                Instantiate(prefabs[ObjSelect], hit.point, Quaternion.identity);
             }
         }
     }
 
-    public void TogglePlaneVisibility()
+    public void ToggleVisibilityButton()
     {
-        canvanUI.SetActive(false);
+        canvasUI.SetActive(false);
         planeVisibility = !planeVisibility;
+    }
+
+    public void SelectObject(int Obj) 
+    {
+        ObjSelect = Obj;
     }
 }
