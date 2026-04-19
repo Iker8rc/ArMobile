@@ -30,7 +30,7 @@ public class TrackImage : MonoBehaviour
             {
                 if (objetosAR[i].referenceImageName == newImage.referenceImage.name)
                 {
-                    prefabCopy = Instantiate(objetosAR[i].referencePrefab, newImage.transform.position, newImage.transform.rotation);
+                    //prefabCopy = Instantiate(objetosAR[i].referencePrefab, newImage.transform.position, newImage.transform.rotation);
                 }
             }
         }
@@ -52,9 +52,9 @@ public class TrackImage : MonoBehaviour
     }
 }
 
-[Serializable]
-public class ARObjects
-{
+//[Serializable]
+//public class ARObjects
+/*{
     public string referenceImageName;
     public GameObject referencePrefab;
-}
+}*/
