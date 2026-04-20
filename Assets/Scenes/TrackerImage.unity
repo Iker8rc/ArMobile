@@ -201,20 +201,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Prueba
   trackedImageManager: {fileID: 331264288}
   objetosAR:
-  - referenceImageName: Bardock
-    prefab: {fileID: 7592580542000108554, guid: 1ec137b62653eb84c893f59a3f997a0b, type: 3}
-  - referenceImageName: Vegeta
-    prefab: {fileID: 1972354242787947095, guid: 88153649467b6784cb1ab23ef5e8ff4f, type: 3}
-  - referenceImageName: Goku
-    prefab: {fileID: 646864385544238216, guid: 7eb6835994be19346ba60ea9416eecb1, type: 3}
   - referenceImageName: Jiren
     prefab: {fileID: 1574433949075520834, guid: 6c2d8ac12b31a8d43bce5c82b7360edd, type: 3}
-  - referenceImageName: Gohan
-    prefab: {fileID: 104182531378245952, guid: 3ee49b9c27cbfd04794f2113cc864450, type: 3}
   - referenceImageName: Piccolo
     prefab: {fileID: 5525657797473365657, guid: ad6b92b38f4d6b145a3479dd51f5e36f, type: 3}
+  - referenceImageName: Bardock
+    prefab: {fileID: 7592580542000108554, guid: 1ec137b62653eb84c893f59a3f997a0b, type: 3}
   - referenceImageName: Boo
     prefab: {fileID: 7130216748378841007, guid: 5789ef5cbde307a4481f26ca8150d254, type: 3}
+  - referenceImageName: Goku
+    prefab: {fileID: 646864385544238216, guid: 7eb6835994be19346ba60ea9416eecb1, type: 3}
+  - referenceImageName: Vegeta
+    prefab: {fileID: 1972354242787947095, guid: 88153649467b6784cb1ab23ef5e8ff4f, type: 3}
+  - referenceImageName: Gohan
+    prefab: {fileID: 104182531378245952, guid: 3ee49b9c27cbfd04794f2113cc864450, type: 3}
   - referenceImageName: Cell
     prefab: {fileID: 2568336585945733398, guid: 9e351b2c579692e4980e666eb363841c, type: 3}
 --- !u!1001 &331264285
