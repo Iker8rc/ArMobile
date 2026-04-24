@@ -28,5 +28,10 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(MainMenu);
     }
+
+    public void Restart(string FakeVR)
+    {
+        SceneManager.LoadScene(FakeVR);
+    }
 }
 
