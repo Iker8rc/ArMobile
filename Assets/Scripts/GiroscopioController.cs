@@ -1,7 +1,7 @@
 using UnityEngine;
 
 public class GiroscopioController : MonoBehaviour
-{
+{/*
     [SerializeField] 
     private Transform cam;
 
@@ -74,6 +74,6 @@ public class GiroscopioController : MonoBehaviour
                 Destroy(hit.transform.gameObject);
             }
         }
-    }
+    }*/
 
 }

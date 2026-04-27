@@ -350,7 +350,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 264141051}
-  - component: {fileID: 264141050}
+  - component: {fileID: 264141053}
+  - component: {fileID: 264141052}
   m_Layer: 0
   m_Name: GiroscopioController
   m_TagString: Untagged
@@ -358,36 +359,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &264141050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264141049}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ade43bc195d96a41873d711faff0f53, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GiroscopioController
-  cam: {fileID: 901891097}
-  life: 7
-  minimX: -40
-  minimZ: -40
-  maxX: -20
-  maxZ: -20
-  krillin:
-  - {fileID: 1675390862542550127, guid: 207d50e763ef81743b28f5bf44ff6be4, type: 3}
-  spawnTime: 5
-  panelGameOver: {fileID: 933982548}
-  vidas:
-  - {fileID: 1634669921}
-  - {fileID: 1473023413}
-  - {fileID: 537885778}
-  - {fileID: 617396401}
-  - {fileID: 392052426}
-  - {fileID: 1422048382}
-  - {fileID: 1673326461}
 --- !u!4 &264141051
 Transform:
   m_ObjectHideFlags: 0
@@ -403,6 +374,86 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &264141052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264141049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f514b017e6f2d45bdaf4d9eb795673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GiroscopioBUENO
+  cam: {fileID: 901891097}
+  life: 7
+  heart:
+  - {fileID: 1634669921}
+  - {fileID: 1473023413}
+  - {fileID: 537885778}
+  - {fileID: 617396401}
+  - {fileID: 392052426}
+  - {fileID: 1422048382}
+  - {fileID: 1673326461}
+  tiempoSpawn: 3
+  minimX: -40
+  minimZ: -40
+  maxX: -20
+  maxZ: -20
+  marcianito:
+  - {fileID: 1675390862542550127, guid: 207d50e763ef81743b28f5bf44ff6be4, type: 3}
+  gameOverPannel: {fileID: 933982548}
+--- !u!114 &264141053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264141049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 22f304291606d144e8d51d64dfe4c278, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: d569d2ba-28b8-4ed7-a13c-51f9bb9b3745
+    m_ActionName: 'TouchMap/TouchScreen[/Mouse/press]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 264141052}
+        m_TargetAssemblyTypeName: GiroscopioBUENO, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c74c9bd3-5fb9-4c4c-8177-90ac595b375e
+    m_ActionName: 'TouchMap/TouchPosition[/Mouse/position]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: TouchMap
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1 &392052426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,12 +1088,12 @@ RectTransform:
   - {fileID: 33664186}
   - {fileID: 679241873}
   - {fileID: 1634669922}
+  - {fileID: 1473023414}
   - {fileID: 537885779}
   - {fileID: 617396402}
   - {fileID: 392052427}
   - {fileID: 1422048383}
   - {fileID: 1673326462}
-  - {fileID: 1473023414}
   - {fileID: 1884936569}
   - {fileID: 933982549}
   - {fileID: 1885571019}
@@ -2464,37 +2515,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673326461}
   m_CullTransparentMesh: 1
---- !u!1 &1736259017
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1736259018}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1736259018
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736259017}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 242.10918, y: 0, z: 188.66855}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852079313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,4 +3250,3 @@ SceneRoots:
   - {fileID: 1489523320}
   - {fileID: 1852079314}
   - {fileID: 264141051}
-  - {fileID: 1736259018}

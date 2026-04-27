@@ -14,20 +14,16 @@ public class Prueba : MonoBehaviour
     private ARTrackedImageManager trackedImageManager;
     [SerializeField]
     private ARObjects[] objetosAR;
-
     [Header ("Primera pelea")]
     private GameObject prefabCopy;
     private GameObject prefabCopy2;
-
     [Header ("Segunda pelea")]
     private GameObject prefabCopy3;
     private GameObject prefabCopy4;
-
     [Header ("Tercera pelea")]
     private GameObject prefabCopy5;
     private GameObject prefabCopy6;
-
-    [Header ("Quarta pelea")]
+    [Header ("Cuarta pelea")]
     private GameObject prefabCopy7;
     private GameObject prefabCopy8;
 
@@ -57,10 +53,8 @@ public class Prueba : MonoBehaviour
         {
             pelea = true;
             StartCoroutine(Pelea());
-
             prefabCopy.transform.LookAt(prefabCopy2.transform);
             prefabCopy2.transform.LookAt(prefabCopy.transform);
-            
             animator1.SetBool("Fight", true);
             animator2.SetBool("Fight", true);
         }
@@ -69,10 +63,8 @@ public class Prueba : MonoBehaviour
         {
             pelea2 = true;
             StartCoroutine(Pelea2());
-
             prefabCopy3.transform.LookAt(prefabCopy4.transform);
             prefabCopy4.transform.LookAt(prefabCopy3.transform);
-
             animator3.SetBool("Fight", true);
             animator4.SetBool("Fight", true);
         }
@@ -81,10 +73,8 @@ public class Prueba : MonoBehaviour
         {
             pelea3 = true;
             StartCoroutine(Pelea3());
-
             prefabCopy5.transform.LookAt(prefabCopy6.transform);
             prefabCopy6.transform.LookAt(prefabCopy5.transform);
-
             animator5.SetBool("Fight", true);
             animator6.SetBool("Fight", true);
         }
@@ -93,10 +83,8 @@ public class Prueba : MonoBehaviour
         {
             pelea4 = true;
             StartCoroutine(Pelea4());
-
             prefabCopy7.transform.LookAt(prefabCopy8.transform);
             prefabCopy8.transform.LookAt(prefabCopy7.transform);
-
             animator7.SetBool("Fight", true);
             animator8.SetBool("Fight", true);
         }
@@ -106,7 +94,6 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator1.SetBool("Fight", false);
         animator2.SetBool("Fight", false);
-
         animator2.SetTrigger("Win");
         animator1.SetTrigger("Dead");
     }
@@ -116,7 +103,6 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator3.SetBool("Fight", false);
         animator4.SetBool("Fight", false);
-
         animator4.SetTrigger("Win");
         animator3.SetTrigger("Dead");
     }
@@ -126,7 +112,6 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator5.SetBool("Fight", false);
         animator6.SetBool("Fight", false);
-
         animator6.SetTrigger("Win");
         animator5.SetTrigger("Dead");
     }
@@ -136,7 +121,6 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator7.SetBool("Fight", false);
         animator8.SetBool("Fight", false);
-
         animator8.SetTrigger("Win");
         animator7.SetTrigger("Dead");
     }
