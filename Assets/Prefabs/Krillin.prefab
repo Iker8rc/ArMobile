@@ -238,6 +238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5022094353738733123}
   - component: {fileID: 5312411869421688038}
+  - component: {fileID: -8499807542661734927}
   m_Layer: 0
   m_Name: Krillin
   m_TagString: Enemy
@@ -254,7 +255,7 @@ Transform:
   m_GameObject: {fileID: 1675390862542550127}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 338.768, y: 2.798, z: 192.103}
+  m_LocalPosition: {x: -26.820919, y: -11.622644, z: -20.252949}
   m_LocalScale: {x: 0.15344861, y: 0.15344861, z: 0.15344861}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -284,6 +285,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-8499807542661734927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675390862542550127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851a476e38c16db42a182793cb41e364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyController
+  player: {fileID: 0}
 --- !u!1 &2093914643115189086
 GameObject:
   m_ObjectHideFlags: 0

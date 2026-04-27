@@ -370,12 +370,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ade43bc195d96a41873d711faff0f53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GiroscopioController
-  cam: {fileID: 2042777045}
+  cam: {fileID: 901891097}
   life: 7
-  minimX: 50
-  minimZ: 70
-  maxX: 50
-  maxZ: 70
+  minimX: -40
+  minimZ: -40
+  maxX: -20
+  maxZ: -20
   krillin:
   - {fileID: 1675390862542550127, guid: 207d50e763ef81743b28f5bf44ff6be4, type: 3}
   spawnTime: 5
@@ -2464,6 +2464,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673326461}
   m_CullTransparentMesh: 1
+--- !u!1 &1736259017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1736259018}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1736259018
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736259017}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 242.10918, y: 0, z: 188.66855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1852079313
 GameObject:
   m_ObjectHideFlags: 0
@@ -3069,6 +3100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092029692}
   - component: {fileID: 2092029691}
+  - component: {fileID: 2092029693}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3156,6 +3188,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &2092029693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092029690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -3169,3 +3230,4 @@ SceneRoots:
   - {fileID: 1489523320}
   - {fileID: 1852079314}
   - {fileID: 264141051}
+  - {fileID: 1736259018}
