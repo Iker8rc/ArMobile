@@ -94,7 +94,7 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator1.SetBool("Fight", false);
         animator2.SetBool("Fight", false);
-        animator2.SetTrigger("Win");
+        animator2.SetTrigger("Idle");
         animator1.SetTrigger("Dead");
     }
         
@@ -103,7 +103,7 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator3.SetBool("Fight", false);
         animator4.SetBool("Fight", false);
-        animator4.SetTrigger("Win");
+        animator4.SetTrigger("Idle");
         animator3.SetTrigger("Dead");
     }
 
@@ -112,7 +112,7 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator5.SetBool("Fight", false);
         animator6.SetBool("Fight", false);
-        animator6.SetTrigger("Win");
+        animator6.SetTrigger("Idle");
         animator5.SetTrigger("Dead");
     }
         
@@ -121,7 +121,7 @@ public class Prueba : MonoBehaviour
         yield return new WaitForSeconds(15f);
         animator7.SetBool("Fight", false);
         animator8.SetBool("Fight", false);
-        animator8.SetTrigger("Win");
+        animator8.SetTrigger("Idle");
         animator7.SetTrigger("Dead");
     }
 
