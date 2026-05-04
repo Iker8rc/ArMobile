@@ -7,7 +7,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     private float speed;
     [SerializeField]
-    private float distDaño;
+    private float distDamage;
     public GiroscopioBUENO vidaPlayer;
 
     [SerializeField]
@@ -21,7 +21,7 @@ public class EnemyController : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, player.position);
 
-        if (distance < distDaño)
+        if (distance < distDamage)
         {
             vidaPlayer.TakeDamage(1);
             Destroy(gameObject);

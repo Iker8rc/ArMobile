@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   player: {fileID: 0}
   speed: 6
-  "distDa\xF1o": 2
+  distDamage: 2
   vidaPlayer: {fileID: 0}
   damage: {fileID: 0}
 --- !u!1 &2093914643115189086
