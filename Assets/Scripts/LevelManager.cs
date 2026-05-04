@@ -7,6 +7,12 @@ public class LevelManager : MonoBehaviour
     private GameObject pauseMenu;
 
     private bool abierto = false;
+    [SerializeField]
+    private AudioClip music;
+    private void Start()
+    {
+        AudioManager.instance.PlayMusic(music);
+    }
 
     public void BotonMenu()
     {
