@@ -32,7 +32,9 @@ public class LevelManager : MonoBehaviour
 
     public void Salir(string MainMenu)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(MainMenu);
+
     }
 
     public void Restart(string FakeVR)

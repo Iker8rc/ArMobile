@@ -54,7 +54,9 @@ public class Prueba : MonoBehaviour
             pref1.transform.LookAt(pref2.transform);
             pref2.transform.LookAt(pref1.transform);
             animator1.SetBool("Fight", true);
+            Debug.Log(animator1.GetCurrentAnimatorStateInfo(0));
             animator2.SetBool("Fight", true);
+            Debug.Log(animator2.GetCurrentAnimatorStateInfo(0));
         }
 
         if (pref3 != null && pref4 != null && fight2 == false)
@@ -132,11 +134,13 @@ public class Prueba : MonoBehaviour
                     {
                         pref1 = Instantiate(objets[i].prefab, newImage.transform.position, newImage.transform.rotation);
                         animator1 = pref1.GetComponent<Animator>();
+                        Debug.Log(animator1.name);
                     }
                     else if (pref2 == null)
                     {
                         pref2 = Instantiate(objets[i].prefab, newImage.transform.position, newImage.transform.rotation);
                         animator2 = pref2.GetComponent<Animator>();
+                        Debug.Log(animator2.name);
                     }
                     else if (pref3 == null)
                     {
