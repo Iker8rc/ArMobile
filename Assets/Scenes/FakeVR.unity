@@ -396,13 +396,15 @@ MonoBehaviour:
   - {fileID: 392052426}
   - {fileID: 1422048382}
   - {fileID: 1673326461}
-  tiempoSpawn: 3
+  tiempoSpawn: 5
   minimX: -40
   minimZ: -40
-  maxX: -20
-  maxZ: -20
+  maxX: 125
+  maxZ: 50
   marcianito:
   - {fileID: 1675390862542550127, guid: 207d50e763ef81743b28f5bf44ff6be4, type: 3}
+  - {fileID: 4453211127273027881, guid: 009cad4a9dc6bf14baa4dc203419d41b, type: 3}
+  - {fileID: 7786467564940785116, guid: 19449367fd99b9e428bf8e0c1fc44ebc, type: 3}
   gameOverPannel: {fileID: 933982548}
 --- !u!114 &264141053
 MonoBehaviour:

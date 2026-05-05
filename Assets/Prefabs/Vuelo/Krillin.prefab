@@ -298,10 +298,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   player: {fileID: 0}
-  speed: 6
-  distDamage: 2
+  speed: 4
+  destroyDistance: 2
   vidaPlayer: {fileID: 0}
-  damage: {fileID: 0}
+  sfxDamage: {fileID: 0}
 --- !u!1 &2093914643115189086
 GameObject:
   m_ObjectHideFlags: 0

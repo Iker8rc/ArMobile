@@ -97,13 +97,3 @@ MonoBehaviour:
     m_SpecifySize: 0
     m_Name: Jiren
     m_Texture: {fileID: 0}
-  - m_SerializedGuid:
-      m_GuidLow: 5745192070021215281
-      m_GuidHigh: 18418365078882354069
-    m_SerializedTextureGuid:
-      m_GuidLow: 9643431692445941422
-      m_GuidHigh: 11235116951055967417
-    m_Size: {x: 0, y: 0}
-    m_SpecifySize: 0
-    m_Name: Broly
-    m_Texture: {fileID: 0}
