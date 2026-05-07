@@ -334,6 +334,8 @@ MonoBehaviour:
   - {fileID: 7786467564940785116, guid: 19449367fd99b9e428bf8e0c1fc44ebc, type: 3}
   - {fileID: 4453211127273027881, guid: 009cad4a9dc6bf14baa4dc203419d41b, type: 3}
   gameOverPannel: {fileID: 933982548}
+  shoot: {fileID: 8300000, guid: 9b10b8091fee82048bb3ae7e02a800f1, type: 3}
+  gameOverSFX: {fileID: 8300000, guid: c8fd52cdefe3a024dad3f8e5cb90f899, type: 3}
 --- !u!114 &264141053
 MonoBehaviour:
   m_ObjectHideFlags: 0

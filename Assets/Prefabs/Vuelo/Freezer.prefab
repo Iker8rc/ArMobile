@@ -955,7 +955,7 @@ MonoBehaviour:
   speed: 6
   destroyDistance: 2
   vidaPlayer: {fileID: 0}
-  sfxDamage: {fileID: 0}
+  sfxDamage: {fileID: 8300000, guid: a53480637af2185458cb1324a97609f5, type: 3}
 --- !u!65 &1736869779984034009
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 public class GiroscopioController : MonoBehaviour
 {
@@ -19,6 +20,10 @@ public class GiroscopioController : MonoBehaviour
     public GameObject gameOverPannel;
     [SerializeField]
     private AudioClip shoot;
+    [SerializeField]
+    private AudioClip gameOverSFX;
+    private bool dispararDeNuevo = true;
+    public bool muerto = false;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -60,6 +65,17 @@ public class GiroscopioController : MonoBehaviour
 
     public void Shoot()
     {
+        if (muerto == true) 
+        {
+            return;
+        }
+
+        if (dispararDeNuevo == false)
+        {
+            return;
+        }
+
+        dispararDeNuevo = false;
         Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
         RaycastHit hit;
 
@@ -72,6 +88,12 @@ public class GiroscopioController : MonoBehaviour
                 Destroy(hit.transform.gameObject);
             }
         }
+        StartCoroutine(Disparar());
+    }
+    IEnumerator Disparar()
+    {
+        yield return new WaitForSeconds(0.4f);
+        dispararDeNuevo = true;
     }
     public void TouchScreen(InputAction.CallbackContext context)
     {
@@ -89,6 +111,8 @@ public class GiroscopioController : MonoBehaviour
         if (life <= 0)
         {
             gameOverPannel.SetActive(true);
+            AudioManager.instance.PlayMusic(gameOverSFX);
+            muerto = true;
         }
     }
 }
