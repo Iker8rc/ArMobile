@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 5022094353738733123}
   - component: {fileID: 5312411869421688038}
   - component: {fileID: -8499807542661734927}
+  - component: {fileID: -6243424008569040106}
   m_Layer: 0
   m_Name: Krillin
   m_TagString: Enemy
@@ -302,6 +303,27 @@ MonoBehaviour:
   destroyDistance: 2
   vidaPlayer: {fileID: 0}
   sfxDamage: {fileID: 0}
+--- !u!65 &-6243424008569040106
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675390862542550127}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.7563858, y: 4.7360625, z: 6.418178}
+  m_Center: {x: -0.056941304, y: 3.1944633, z: -0.16249938}
 --- !u!1 &2093914643115189086
 GameObject:
   m_ObjectHideFlags: 0

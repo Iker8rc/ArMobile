@@ -23,6 +23,7 @@ public class EnemyController : MonoBehaviour
         if (distance < destroyDistance)
         {
             vidaPlayer.TakeDamage(1);
+            AudioManager.instance.PlaySFX(sfxDamage, transform.position);
             Destroy(gameObject);
         }
     }

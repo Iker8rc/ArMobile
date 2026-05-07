@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 1128095535353660955}
   - component: {fileID: 962023392932173007}
   - component: {fileID: 8658110395893407177}
+  - component: {fileID: 2562444382434477075}
   m_Layer: 0
   m_Name: Black
   m_TagString: Enemy
@@ -1057,6 +1058,27 @@ MonoBehaviour:
   destroyDistance: 2
   vidaPlayer: {fileID: 0}
   sfxDamage: {fileID: 0}
+--- !u!65 &2562444382434477075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7786467564940785116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.1976013, y: 0.7300534, z: 1.8895111}
+  m_Center: {x: 0.0035247803, y: 1.2051308, z: -0.17610931}
 --- !u!1 &7871117247026928078
 GameObject:
   m_ObjectHideFlags: 0

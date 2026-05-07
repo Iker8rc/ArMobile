@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GiroscopioController : MonoBehaviour
 {
@@ -13,9 +14,11 @@ public class GiroscopioController : MonoBehaviour
     [SerializeField]
     private float minimX, minimZ, maxX, maxZ;
     [SerializeField]
-    private GameObject[] marcianito;
+    private GameObject[] enemigos;
     [SerializeField]
     public GameObject gameOverPannel;
+    [SerializeField]
+    private AudioClip shoot;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,11 +30,10 @@ public class GiroscopioController : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (SystemInfo.supportsGyroscope == true) // nos devuelve la rot del dispositivo
+        if (SystemInfo.supportsGyroscope == true) 
         {
             Quaternion inputGyro = Input.gyro.attitude;
 
-            //invertimos el eje z y w del quaternion para que la rotacion del giroscopio encaje con la de la cam en coordenadas de Unity.
             //cam.rotation = new Quaternion(inputGyro.x, inputGyro.y, - inputGyro.z, -inputGyro.w);
 
             Quaternion correcionGiro = Quaternion.Euler (90, 0, 0);
@@ -47,8 +49,8 @@ public class GiroscopioController : MonoBehaviour
             float x = Random.Range(minimX, maxX);
             float z = Random.Range(minimZ, maxZ);
 
-            int marcianitoCogido = Random.Range (0, marcianito.Length);
-            GameObject enemigo = Instantiate(marcianito[marcianitoCogido], new Vector3 (x, 0, z), Quaternion.identity);
+            int enemigoZ = Random.Range (0, enemigos.Length);
+            GameObject enemigo = Instantiate(enemigos[enemigoZ], new Vector3 (x, 0, z), Quaternion.identity);
             enemigo.GetComponent<EnemyController>().player = cam;
 
             EnemyController enemyScript = enemigo.GetComponent<EnemyController>();
@@ -61,14 +63,21 @@ public class GiroscopioController : MonoBehaviour
         Ray ray = Camera.main.ViewportPointToRay(new Vector2(0.5f, 0.5f));
         RaycastHit hit;
 
+        AudioManager.instance.PlaySFX(shoot, transform.position);
+
         if (Physics.Raycast(ray, out hit))
         {
-            Debug.Log("Disparas");
-
             if (hit.transform.CompareTag("Enemy"))
             {               
                 Destroy(hit.transform.gameObject);
             }
+        }
+    }
+    public void TouchScreen(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Started)
+        {
+            Shoot();
         }
     }
 

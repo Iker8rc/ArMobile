@@ -885,6 +885,7 @@ GameObject:
   - component: {fileID: 2343359049391097185}
   - component: {fileID: 1364269747335219934}
   - component: {fileID: 7633837050882329160}
+  - component: {fileID: 1736869779984034009}
   m_Layer: 0
   m_Name: Freezer
   m_TagString: Enemy
@@ -955,6 +956,27 @@ MonoBehaviour:
   destroyDistance: 2
   vidaPlayer: {fileID: 0}
   sfxDamage: {fileID: 0}
+--- !u!65 &1736869779984034009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453211127273027881}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.46829224, y: 0.8324456, z: 0.8551941}
+  m_Center: {x: 0.018325806, y: 0.78847957, z: -0.072402954}
 --- !u!1 &4476076556786902653
 GameObject:
   m_ObjectHideFlags: 0
