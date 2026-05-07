@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     private float speed;
     [SerializeField]
     private float destroyDistance;
-    public GiroscopioBUENO vidaPlayer;
+    public GiroscopioController vidaPlayer;
     [SerializeField]
     private AudioClip sfxDamage;
 
