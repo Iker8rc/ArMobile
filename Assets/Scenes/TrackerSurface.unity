@@ -709,7 +709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.5, y: -4.899994}
+  m_AnchoredPosition: {x: -5.5, y: -4.9000244}
   m_SizeDelta: {x: 44.9, y: 44.8}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &531960547
@@ -2965,6 +2965,7 @@ MonoBehaviour:
   - {fileID: 4578339414057411196, guid: 5a53cc12c040542409670ba835141417, type: 3}
   - {fileID: 1171370799899408201, guid: d25ec90891a847d4c84708099cc68d07, type: 3}
   canvasUI: {fileID: 480943318}
+  sfxPrefab: {fileID: 8300000, guid: 9b10b8091fee82048bb3ae7e02a800f1, type: 3}
 --- !u!114 &2001152337
 MonoBehaviour:
   m_ObjectHideFlags: 0

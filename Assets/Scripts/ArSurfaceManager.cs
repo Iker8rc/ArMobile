@@ -12,7 +12,9 @@ public class ARSurfacemanager : MonoBehaviour
     private GameObject canvasUI;
     private bool planeVisibility = true;
     private PlayerInput playerInput;
-    private int ObjSelect; 
+    private int ObjSelect;
+    [SerializeField]
+    private AudioClip sfxPrefab;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -41,6 +43,7 @@ public class ARSurfacemanager : MonoBehaviour
             {
                 Debug.Log("Choco contra " + hit.transform.name);
                 Instantiate(prefabs[ObjSelect], hit.point, Quaternion.identity);
+                AudioManager.instance.PlaySFX(sfxPrefab, transform.position);
             }
         }
     }
