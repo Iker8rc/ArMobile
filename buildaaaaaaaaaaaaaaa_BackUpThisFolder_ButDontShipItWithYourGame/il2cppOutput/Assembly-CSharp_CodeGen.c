@@ -34,8 +34,16 @@ extern void GiroscopioController_Start_m3995E44F7A461E03395EA53ECD2C34083E5AE45A
 extern void GiroscopioController_LateUpdate_mC7946346F240203CC166B05B4384440D9E55BF87 (void);
 extern void GiroscopioController_Update_m2828C52A14EAE0B08D0EEF1DEC56231BC32FB053 (void);
 extern void GiroscopioController_Shoot_m84A5CFA4695AA647609F97C91F31C3B98BE5EBCD (void);
+extern void GiroscopioController_Disparar_mF1DCFE3B594979DD6C547F2688893C284A1B8B23 (void);
+extern void GiroscopioController_TouchScreen_m6E02A79573A0CE7F748CBE1D77ED6B88027F74A6 (void);
 extern void GiroscopioController_TakeDamage_m183D117AD7E0D637DCDFF4EF3F322F5A0C63968A (void);
 extern void GiroscopioController__ctor_mFE91CA932074E6CB4A5423A5BB73AA9B526A12C8 (void);
+extern void U3CDispararU3Ed__19__ctor_mFDCCD199DBCFE1C2F52591866C28715E13903FBC (void);
+extern void U3CDispararU3Ed__19_System_IDisposable_Dispose_mA998F0F06B12DE3928A8C7CE4148D7548EC013A5 (void);
+extern void U3CDispararU3Ed__19_MoveNext_mEB7554FD52B0053ECF5E376C0DEB1807888A6BBA (void);
+extern void U3CDispararU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m172A01BB9E7C3E7E9E54A97F9EBF1F5E35529DFC (void);
+extern void U3CDispararU3Ed__19_System_Collections_IEnumerator_Reset_mCBE6F8C9F742EADDC82B93A8B43BDD2B8A582BF8 (void);
+extern void U3CDispararU3Ed__19_System_Collections_IEnumerator_get_Current_m63A34DE6C01F29F8A25B3CA191C4803C7C4A21ED (void);
 extern void LevelManager_Start_mA7A45D9D0CBA8784B87F70B204C19A2AAC234D42 (void);
 extern void LevelManager_BotonMenu_m4C2F6CC85C9FB52C29B64D06F1E24ECBC5FEBD0C (void);
 extern void LevelManager_ResumeGame_mD01606AA823E8505D1535C2F8D054F76B72C4561 (void);
@@ -176,7 +184,7 @@ extern void U3CWaitUntilNextCardU3Ed__36_MoveNext_mEB6BA70FAED1CFCFF4A723EA3EAB8
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mDB2315FB1F67F06B37604285AD8F003E282D1607 (void);
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_Reset_m5E5CC9DFDC8C17DB423A7C7ECBCD4342A7754633 (void);
 extern void U3CWaitUntilNextCardU3Ed__36_System_Collections_IEnumerator_get_Current_mE7D77BA338B271D9E95117683B19436CFFF37229 (void);
-static Il2CppMethodPointer s_methodPointers[169] = 
+static Il2CppMethodPointer s_methodPointers[177] = 
 {
 	ARSurfacemanager_Start_m878A52774AF6286D0981CC9A40AF41476A5D2772,
 	ARSurfacemanager_Update_m80AF29BC63EDF9D9885310ED0CEEC353F5D054A6,
@@ -205,8 +213,16 @@ static Il2CppMethodPointer s_methodPointers[169] =
 	GiroscopioController_LateUpdate_mC7946346F240203CC166B05B4384440D9E55BF87,
 	GiroscopioController_Update_m2828C52A14EAE0B08D0EEF1DEC56231BC32FB053,
 	GiroscopioController_Shoot_m84A5CFA4695AA647609F97C91F31C3B98BE5EBCD,
+	GiroscopioController_Disparar_mF1DCFE3B594979DD6C547F2688893C284A1B8B23,
+	GiroscopioController_TouchScreen_m6E02A79573A0CE7F748CBE1D77ED6B88027F74A6,
 	GiroscopioController_TakeDamage_m183D117AD7E0D637DCDFF4EF3F322F5A0C63968A,
 	GiroscopioController__ctor_mFE91CA932074E6CB4A5423A5BB73AA9B526A12C8,
+	U3CDispararU3Ed__19__ctor_mFDCCD199DBCFE1C2F52591866C28715E13903FBC,
+	U3CDispararU3Ed__19_System_IDisposable_Dispose_mA998F0F06B12DE3928A8C7CE4148D7548EC013A5,
+	U3CDispararU3Ed__19_MoveNext_mEB7554FD52B0053ECF5E376C0DEB1807888A6BBA,
+	U3CDispararU3Ed__19_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m172A01BB9E7C3E7E9E54A97F9EBF1F5E35529DFC,
+	U3CDispararU3Ed__19_System_Collections_IEnumerator_Reset_mCBE6F8C9F742EADDC82B93A8B43BDD2B8A582BF8,
+	U3CDispararU3Ed__19_System_Collections_IEnumerator_get_Current_m63A34DE6C01F29F8A25B3CA191C4803C7C4A21ED,
 	LevelManager_Start_mA7A45D9D0CBA8784B87F70B204C19A2AAC234D42,
 	LevelManager_BotonMenu_m4C2F6CC85C9FB52C29B64D06F1E24ECBC5FEBD0C,
 	LevelManager_ResumeGame_mD01606AA823E8505D1535C2F8D054F76B72C4561,
@@ -351,9 +367,9 @@ static Il2CppMethodPointer s_methodPointers[169] =
 extern void Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x0600008E, Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk },
+	{ 0x06000096, Goal__ctor_m4452076EE88E564D97BBDD12E7011CAF34E275A3_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[169] = 
+static const int32_t s_InvokerIndices[177] = 
 {
 	16302,
 	16302,
@@ -382,8 +398,16 @@ static const int32_t s_InvokerIndices[169] =
 	16302,
 	16302,
 	16302,
+	16086,
+	12723,
 	12276,
 	16302,
+	12276,
+	16302,
+	15877,
+	16086,
+	16302,
+	16086,
 	16302,
 	16302,
 	16302,
@@ -529,7 +553,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	169,
+	177,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
