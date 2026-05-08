@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
 public class GiroscopioController : MonoBehaviour
 {
@@ -8,7 +10,7 @@ public class GiroscopioController : MonoBehaviour
     private Transform cam;
     public int life;
     [SerializeField]
-    private GameObject[] heart;
+    private GameObject[] vida;
     [SerializeField]
     private float tiempoSpawn;
     private float timePass;
@@ -24,6 +26,10 @@ public class GiroscopioController : MonoBehaviour
     private AudioClip gameOverSFX;
     private bool dispararDeNuevo = true;
     public bool muerto = false;
+    [SerializeField]
+    private int kills;
+    [SerializeField]
+    private TextMeshProUGUI textoMuertes;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -57,7 +63,6 @@ public class GiroscopioController : MonoBehaviour
             int enemigoZ = Random.Range (0, enemigos.Length);
             GameObject enemigo = Instantiate(enemigos[enemigoZ], new Vector3 (x, 0, z), Quaternion.identity);
             enemigo.GetComponent<EnemyController>().player = cam;
-
             EnemyController enemyScript = enemigo.GetComponent<EnemyController>();
             enemyScript.vidaPlayer = GetComponent<GiroscopioController>();     
         }
@@ -84,7 +89,9 @@ public class GiroscopioController : MonoBehaviour
         if (Physics.Raycast(ray, out hit))
         {
             if (hit.transform.CompareTag("Enemy"))
-            {               
+            {        
+                kills++;
+                textoMuertes.text = "x" + kills;         
                 Destroy(hit.transform.gameObject);
             }
         }
@@ -106,7 +113,7 @@ public class GiroscopioController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         life -= damage;
-        heart[life].SetActive(false);
+        vida[life].SetActive(false);
 
         if (life <= 0)
         {
